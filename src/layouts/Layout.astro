@@ -4,7 +4,9 @@ interface Props {
 }
 
 const { title } = Astro.props;
-import Header   from "../components/Header.tsx";
+import  Header  from "../components/ui/Header.tsx";
+import  Footer  from "../components/ui/Footer";
+
 ---
 
 <!doctype html>
@@ -21,8 +23,11 @@ import Header   from "../components/Header.tsx";
 		<title>{title}</title>
 	</head>
 	<body>
-       <Header client:load />
+    <div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
+     <Header client:load />
 		<slot />
+    <Footer client:load />
+    
 	</body>
 </html>
 <style is:global>
@@ -38,8 +43,9 @@ import Header   from "../components/Header.tsx";
 		);
 	}
 	html {
-		font-family: system-ui, sans-serif;
-		background-size: 224px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
 	}
 	code {
 		font-family:
