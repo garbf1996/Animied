@@ -1,40 +1,58 @@
 ---
 import { Image } from 'astro:assets';
 import ImageAnimied  from './img/d9gjyya-de8938c0-1c90-4443-9a0d-2cd268bf7851.png';
+import CloudUpload from './icon/Cloud-Upload.astro';
+import Users from './icon/Users.astro';
+import News from './icon/News.astro';
+import BrandSpotify from './icon/Brand-Spotify.astro';
 ---
 <article>
 <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl py-20 ">
-    <div class="flex  items-center">
-         <h1 class="text-4xl	font-medium text-yellow-200">
-           Disfruta los mejores Animied <span class="text-red-200">24/7</span> sin interrupciones
-           <ul class="grid grid-cols-1 gap-5 py-4">
-            <li class="text-purple-200 text-xl">
-              <span class="text-red-200  text-x">- </span> 100% Gratis
-            </li>
-            <li class="text-purple-200  text-xl">
-              <span class="text-red-200">- </span> Sin publicidad
-            </li>
-            <li class="text-purple-200  text-xl">
-              <span class="text-red-200">- </span> Sin registro
-            </li class="text-blue-200">
-            <li class="text-purple-200  text-xl">
-              <span class="text-red-200">- </span> Sin restricciones
-            </li>
-
-            <li class="text-purple-200  text-xl">
-              <span class="text-red-200">- </span> Sin restricciones
-            </li>
-
-            <li class="text-purple-200 text-xl">
-              <span class="text-red-200">- </span> 4k y Full HD
-           </ul>
-         </h1>
-         
-         
+<div class="flex  items-center">
+<h1 class="text-4xl	font-medium text-yellow-200">Disfruta los mejores Animied <span class="text-red-200">24/7</span> sin interrupciones
+  <div class="flex  flex-row  p-2">
+   <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-wrap -m-4 text-center">
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+           <CloudUpload />
+          <h2 class="title-font font-medium text-3xl text-red-200">2.7K</h2>
+          <p class="leading-relaxed  text-xl">Animied</p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+       <Users />
+          <h2 class="title-font font-medium text-3xl text-red-200">1.3K</h2>
+          <p class="leading-relaxed text-xl">
+            Online 
+          </p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+          <News />
+          <h2 class="title-font font-medium text-3xl text-red-200">74</h2>
+          <p class="leading-relaxed text-xl">
+            Nuevo
+          </p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+        <div class="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+        <BrandSpotify />
+          <h2 class="title-font font-medium text-3xl text-red-200">46</h2>
+          <p class="leading-relaxed text-xl">Pots</p>
+        </div>
+      </div>
     </div>
-    <div class="flex justify-between items-center">
-   <Image src = {ImageAnimied}alt="hero" class="w-96 h-96" />
-    </div>
+  </div>
+  </div>
+          </h1>     
+  </div>
+ <div class="flex justify-between items-center">
+<Image src = {ImageAnimied}alt="hero" class="w-96 h-96" />
+</div>
 </div>
 </article>
 
