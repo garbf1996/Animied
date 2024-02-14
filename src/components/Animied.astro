@@ -1,0 +1,56 @@
+---
+import { Image } from 'astro:assets';
+import  imgNaruto  from "./img/C018_0100.jpg";
+import  imgGuku  from "./img/Dragon-Ball-Z-cuantos-episodios-hay.jpg";
+import  imgOne  from "./img/One_Piece_Serie_de_TV-647985949-large.jpg";
+import  imgAgel  from "./img/stupid-angel.jpg";
+import  img99  from "./img/zy3ahTivttlHsKfGmJHKqYii5UA.jpg";
+---
+
+<section>
+  <article class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
+
+   <div class="flex flex-row space-x-8  items-center justify-center">
+     <div class="relative">
+        <Image src={imgNaruto} alt="Goku" class="rounded-lg  w-64 h-64" />
+        <div class="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white text-center rounded-b-lg">
+          <h2 class="text-2xl font-bold">Naruto Shippuden
+
+          </h2>
+        </div>
+     </div>
+      <div class="relative">
+        <Image src={imgGuku} alt="Goku" class="rounded-lg  w-64 h-64" />
+        <div class="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white text-center rounded-b-lg">
+          <h2 class="text-2xl font-bold">
+            Dragon Ball Z super
+          </h2>
+        </div>
+     </div>
+      <div class="relative">
+        <Image src={imgOne} alt="Goku" class="rounded-lg  w-64 h-64" />
+        <div class="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white text-center rounded-b-lg">
+          <h2 class="text-2xl font-bold">
+            One Piece 
+          </h2>
+        </div>
+     </div>
+         <div class="relative">
+        <Image src={imgAgel} alt="Goku" class="rounded-lg  w-64 h-64" />
+        <div class="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white text-center rounded-b-lg">
+          <h2 class="text-2xl font-bold">
+            Oroka na Tenshi..
+          </h2>
+        </div>
+     </div>
+          <div class="relative">
+        <Image src={img99} alt="Goku" class="rounded-lg  w-64 h-64" />
+        <div class="absolute bottom-0 left-0 right-0 p-4 bg-black bg-opacity-50 text-white text-center rounded-b-lg">
+          <h2 class="text-2xl font-bold">
+            Oroka na Tenshi..
+          </h2>
+        </div>
+     </div>
+   </div>    
+  </article>
+</section>

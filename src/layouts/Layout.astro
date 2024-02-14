@@ -5,7 +5,7 @@ interface Props {
 
 const { title } = Astro.props;
 import  Header  from "../components/ui/Header.tsx";
-import  Footer  from "../components/ui/Footer";
+import  Footer  from "../components/ui/Footer.astro";
 
 ---
 
@@ -22,11 +22,11 @@ import  Footer  from "../components/ui/Footer";
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
-    <div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
-     <Header client:load />
+	<body class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+   
+    <Header client:load />
 		<slot />
-    <Footer client:load />
+    <Footer/>
     
 	</body>
 </html>
@@ -47,6 +47,7 @@ import  Footer  from "../components/ui/Footer";
     flex-direction: column;
     justify-content: space-between; 
 	}
+  
 	code {
 		font-family:
 			Menlo,
